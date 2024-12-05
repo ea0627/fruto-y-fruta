@@ -3,3 +3,7 @@
     object-fit: cover;
     object-position: 0 80%;
 }
+
+.titulo-carrusel{
+    font-family: "Pacifico", sans-serif;     
+}
