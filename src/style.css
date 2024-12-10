@@ -11,3 +11,12 @@
 .texto-color-especial{
     color: #0f8d1a;
 }
+
+.btn-color-especial{
+    background-color: #0f8d1a;
+    color: white;
+}
+
+.border-color-especial{
+    border-color: #0f8d1a;
+}

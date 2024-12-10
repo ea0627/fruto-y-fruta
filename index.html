@@ -13,77 +13,88 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fruto & Fruta</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recetas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quienes somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
+  <head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fruto & Fruta</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </head>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="3000" data-bs-rider="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="src/img/carrusel-img1.jpg" class="d-block w-100 imagen-carrusel" alt="...">
-        <div class="carousel-caption d-none d-md-block h-50">
-          <h1 class="fuente-titulo display-4">Reaproveche mejor los alimentos!</h1>
+  <main>
+    <section id="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="3000" data-bs-rider="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="src/img/carrusel-img2.jpg" class="d-block w-100 imagen-carrusel" alt="...">
-        <div class="carousel-caption d-none d-md-block h-50">
-          <h1 class="fuente-titulo display-4">Economice y gane salud</h1>       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="src/img/carrusel-img1.jpg" class="d-block w-100 imagen-carrusel" alt="...">
+            <div class="carousel-caption d-none d-md-block h-50">
+              <h1 class="fuente-titulo display-4">Reaproveche mejor los alimentos!</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="src/img/carrusel-img2.jpg" class="d-block w-100 imagen-carrusel" alt="...">
+            <div class="carousel-caption d-none d-md-block h-50">
+              <h1 class="fuente-titulo display-4">Economice y gane salud</h1>       
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    </section>
   
-  <title>fruto & fruta</title>
+    <section id="titulo">
+      <h2 class="text-center fuente-titulo texto-color-especial pt-5">Recetas para economizar y ganar salud</h2>
+      <p class="text-center text-secondary pb-5">Nuestras recetas te ayudan a aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
+    </section>
  
-  <h2 class="text-center fuente-titulo texto-color-especial pt-5">Recetas para economizar y ganar salud</h2>
+    <section id="recetas">
+      <div class="card border-color-especial" style="width: 18rem;">
+        <img src="src/img/receta-aguacate.jpg" class="card-img-top" alt="Bowl de aguacate, vista superior">
+        <div class="card-body">
+          <h5 class="card-title">Bowl de aguacate</h5>
+          <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+          <a href="#" class="btn btn-color-especial">Vea la receta</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p class="text-center text-secondary pb-5">Nuestras recetas te ayudan a aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
+  <title>fruto & fruta</title>
 
+  
 
-  <div class="card" style="width: 18rem;">
-    <img src="src/img/receta-aguacate.jpg" class="card-img-top" alt="Bowl de aguacate, vista superior">
-    <div class="card-body">
-      <h5 class="card-title">Bowl de aguacate</h5>
-      <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-      <a href="#" class="btn btn-primary">Vea la receta</a>
-    </div>
-  </div>
-
+  
 
   <img src="" alt="">
   <h3></h3>
