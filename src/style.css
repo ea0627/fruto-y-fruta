@@ -4,6 +4,10 @@
     object-position: 0 80%;
 }
 
-.titulo-carrusel{
+.fuente-titulo{
     font-family: "Pacifico", sans-serif;     
+}
+
+.texto-color-especial{
+    color: #0f8d1a;
 }
