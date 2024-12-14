@@ -1,6 +1,6 @@
-/* .card-largura{
-    width: 18rem
-} */
+.card-largura{
+    max-width: 18rem
+}
 
 .imagen-carrusel {
     height: 400px;
