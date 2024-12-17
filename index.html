@@ -14,13 +14,13 @@
 
 <body>
   <head>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Fruto & Fruta</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Início</a>
@@ -32,7 +32,7 @@
               <a class="nav-link" href="#">Quienes somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contacto" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -41,6 +41,7 @@
   </head>
 
   <main>
+
     <section id="carousel">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="3000" data-bs-rider="carousel">
         <div class="carousel-indicators">
@@ -78,65 +79,86 @@
       <p class="text-center text-secondary pb-5">Nuestras recetas te ayudan a aprovechar mejor los alimentos, economizar, ganar tiempo y practicidad</p>
     </section>
  
-    <section class="container" id="recetas">
-      <div class="row row justify-content-md-center">    
+    <section class="bg-light" id="recetas">
+      <div class="container">
+        <div class="row row justify-content-md-center">    
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-aguacate.jpg" class="card-img-top card-imagen-posicion" alt="Bowl de aguacate, vista superior">
-          <div class="card-body">
-            <h5 class="card-title">Bowl de aguacate</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-aguacate.jpg" class="card-img-top card-imagen-posicion" alt="Bowl de aguacate, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Bowl de aguacate</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-kiwi.jpg" class="card-img-top card-imagen-posicion" alt="Ensalada de kiwi, vista superior">
-          <div class="card-body">
-            <h5 class="card-title">Ensalada de kiwi</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-kiwi.jpg" class="card-img-top card-imagen-posicion" alt="Ensalada de kiwi, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Ensalada de kiwi</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-mix.jpg" class="card-img-top card-imagen-posicion" alt="Mix de vegetales, vista superior">
-          <div class="card-body">
-            <h5 class="card-title">Mix de vegetales</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-mix.jpg" class="card-img-top card-imagen-posicion" alt="Mix de vegetales, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Mix de vegetales</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-pimentones.jpg" class="card-img-top card-imagen-posicion" alt="Pimentones a la Juliana, vista superior">
-          <div class="card-body">
-            <h5 class="card-title">Pimentones a la Juliana</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-pimentones.jpg" class="card-img-top card-imagen-posicion" alt="Pimentones a la Juliana, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Pimentones a la Juliana</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-oriental.jpg" class="card-img-top card-imagen-posicion" alt="Plato oriental, vista superior">
-          <div class="card-body">
-            <h5 class="card-title">Plato oriental</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-oriental.jpg" class="card-img-top card-imagen-posicion" alt="Plato oriental, vista superior">
+            <div class="card-body">
+              <h5 class="card-title">Plato oriental</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
 
-        <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
-          <img src="src/img/receta-remolachas.jpg" class="card-img-top card-imagen-posicion" alt="Remolachas">
-          <div class="card-body">
-            <h5 class="card-title">Remolachas asadas</h5>
-            <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
-            <a href="#" class="btn btn-color-especial">Vea la receta</a>
-          </div>
-        </article>
+          <article class="card border-color-especial card-largura col-12 col-md-4 p-0 m-4">
+            <img src="src/img/receta-remolachas.jpg" class="card-img-top card-imagen-posicion" alt="Remolachas">
+            <div class="card-body">
+              <h5 class="card-title">Remolachas asadas</h5>
+              <p class="card-text">Receta refrescante y llena de vitaminas para su desayuno!</p>
+              <a href="#" class="btn btn-color-especial">Vea la receta</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="modal-contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
   <title>fruto & fruta</title>
 
